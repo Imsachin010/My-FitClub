@@ -37,5 +37,9 @@
     grid-column: 3/4;
 }
 .right-r{
+    text-transform: uppercase;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
     flex: 1 1;
 }
