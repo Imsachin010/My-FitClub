@@ -35,3 +35,24 @@
     height: 2rem;
     fill: white;
 }
+.category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.category>:nth-child(3){
+    font-size: .9rem;
+    line-height: 25px;
+}
+.jon-now{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+.join-now>img{
+    width: 1rem;
+}
+.category:hover{
+    background: var(--playCard);
+    cursor: pointer;
+}
