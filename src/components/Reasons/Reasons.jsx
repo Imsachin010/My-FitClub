@@ -6,6 +6,7 @@ import image3 from "../../assets/image3.png"
 import image4 from "../../assets/image4.png"
 import nb from "../../assets/nb.png"
 import adidas from "../../assets/adidas.png"
+import nike from "../../assets/nike.png"
 import tick from "../../assets/tick.png"
 const Reasons = () => {
   return (
@@ -22,10 +23,33 @@ const Reasons = () => {
             <div>
                 <span>Why</span><span> Choose Us?</span>
             </div>
-            <div>
+            <div className='details-r'>
               <div>
-                <img src="" alt="" /><img src="" alt="" />
+                <img src={tick} alt="" />
+                <span>OVER 10+ EXPERT COACHES</span>
               </div>
+              <div>
+                <img src={tick} alt="" />
+                <span>TRAIN SMARTER & FASTER THAN BEFORE</span>
+              </div>
+              <div>
+                <img src={tick} alt="" />
+                <span>RELIABLE PARTNERS</span>
+              </div>
+              <div>
+                <img src={tick} alt="" />
+                <span>1 FREE PROGRAM FOR NEW MEMBERS </span>
+              </div>
+            </div>
+            <span style={
+              {color : 'var(--gray)',fontWeight : 'normal'}
+              }>
+              OUR PARTNERS
+            </span>
+            <div className="partners">
+              <img src={nb} alt="" />
+              <img src={adidas} alt="" />
+              <img src={nike} alt="" />
             </div>
         </div>
       </div>
