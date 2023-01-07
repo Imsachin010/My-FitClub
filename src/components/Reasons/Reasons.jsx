@@ -20,7 +20,12 @@ const Reasons = () => {
         <div className="right-r">
             <span>Some reasons</span>
             <div>
-                <span>Why </span><span>Choose Us?</span>
+                <span>Why</span><span> Choose Us?</span>
+            </div>
+            <div>
+              <div>
+                <img src="" alt="" /><img src="" alt="" />
+              </div>
             </div>
         </div>
       </div>

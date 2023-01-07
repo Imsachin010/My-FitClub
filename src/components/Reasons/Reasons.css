@@ -43,3 +43,14 @@
     flex-direction: column;
     flex: 1 1;
 }
+.right-r>span{
+    font-weight: bold;
+    color: var(--orange);
+
+}
+.right-r>div{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
