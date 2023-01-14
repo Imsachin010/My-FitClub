@@ -8,5 +8,30 @@
 
 }
 .plans{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+}
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plan>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+.plan>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
 }

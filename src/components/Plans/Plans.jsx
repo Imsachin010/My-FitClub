@@ -1,6 +1,7 @@
 import React from 'react'
 import './Plans.css';
 import {plansData} from '../../data/plansData'
+import whiteTick from '../../assets/whiteTick.png'
 const Plans = () => {
   return (
     <div className='plans-container'>
@@ -11,11 +12,11 @@ const Plans = () => {
       </div>
       {/* plans card */}
       <div className="plans">
-        {plansData.map((plan, 1) => (
+        {plansData.map((plan, i) => (
             <div className="plan" key={i}>
               {plan.icon}
-              <span>[plan.name]</span>
-              <span>[plan.name]</span>
+              <span>{plan.name}</span>
+              <span>$ {plan.price}</span>
 
               <div className="features">
                 {plan.features.map((feature, i) => (
