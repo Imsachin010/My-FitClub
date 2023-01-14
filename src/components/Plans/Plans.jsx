@@ -12,10 +12,26 @@ const Plans = () => {
       {/* plans card */}
       <div className="plans">
         {plansData.map((plan, 1) => (
-            <div className="plan">
+            <div className="plan" key={i}>
               {plan.icon}
               <span>[plan.name]</span>
               <span>[plan.name]</span>
+
+              <div className="features">
+                {plan.features.map((feature, i) => (
+                  <div className="feature" key={i}>
+                    <img src={whiteTick} alt=""/>
+                    <span key={i}>{feature}rn start</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="">
+                <span>See more Benefits</span>
+              </div>
+              <div>
+                <button className="btn">Join Now</button>
+              </div>
             </div>        
         ))}
       </div>
