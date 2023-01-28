@@ -10,6 +10,7 @@ function App() {
           <Programs/>
           <Reasons/>
           <Plans/>
+          <Testimonials/>
     </div>
   );
 
