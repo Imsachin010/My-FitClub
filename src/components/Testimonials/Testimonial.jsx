@@ -14,6 +14,12 @@ export const Testimonial = () => {
             <span>
                 {testimonialsData[selected].review}
             </span>
+            <span>
+              <span style={(color: "var(--orange)")}>
+                {testimonialsData[selected].name}
+              </span>{" "}
+              - {testimonialsData[selected].status}
+            </span>
         </div>
         <div className="left-r"></div>
     </div>
