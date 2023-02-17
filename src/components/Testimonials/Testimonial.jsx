@@ -1,6 +1,8 @@
 import React from 'react'
 import './Testimonial.css'
 import {testimonialsData} from '../../data/testimonialsData';
+import {leftArrow} from '../../assets/leftArrow.png'
+import {rightArrow} from '../../assets/rightArrow.png'
 import { useState } from 'react';
 export const Testimonial = () => {
     const [selected, setSelected] = useState(0)
@@ -15,13 +17,19 @@ export const Testimonial = () => {
                 {testimonialsData[selected].review}
             </span>
             <span>
-              <span style={(color: "var(--orange)")}>
+              <span style={{color: 'var|(--orange)'}}>
                 {testimonialsData[selected].name}
               </span>{" "}
               - {testimonialsData[selected].status}
             </span>
         </div>
-        <div className="left-r"></div>
+        <div className="right-t">
+          <img src={testimonialsData[selected].image} alt="" />
+          <div className="arrows">
+            <img src={leftArrow} alt="" />
+            <img src={rightArrow} alt="" />
+          </div>
+        </div>
     </div>
   )
 }
